@@ -1,0 +1,28 @@
+{
+    "data":[
+        {
+            "previewImageSrc": "assets/images/galleria/Login.png",
+            "thumbnailImageSrc": "assets/images/galleria/Login.png",
+            "alt": "Login",
+            "title": "Login"
+        },
+        {
+            "previewImageSrc": "assets/images/galleria/Todos-Group.png",
+            "thumbnailImageSrc": "assets/images/galleria/Todos-Group.png",
+            "alt": "Todos Lists",
+            "title": "Todos Lists"
+        },
+        {
+            "previewImageSrc": "assets/images/galleria/Todo-List.png",
+            "thumbnailImageSrc": "assets/images/galleria/Todo-List.png",
+            "alt": "Todo List",
+            "title": "Todo List"
+        },
+        {
+            "previewImageSrc": "assets/images/galleria/Todo-Item.png",
+            "thumbnailImageSrc": "assets/images/galleria/Todo-Item.png",
+            "alt": "Todo Item",
+            "title": "Todo Item"
+        }
+    ]
+}

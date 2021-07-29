@@ -1,0 +1,46 @@
+<p-breadcrumb [model]="items"></p-breadcrumb>
+
+<p-card class="todo-card" header="{{lol}}" subheader="{{lol2}}" styleClass="p-card-shadow">
+    <ul>
+        <li>
+            <mat-slide-toggle>Task 1</mat-slide-toggle>
+        </li>
+        <li>
+            <mat-slide-toggle>Task 2</mat-slide-toggle>
+        </li>
+        <li>
+            <mat-slide-toggle>Task 3</mat-slide-toggle>
+        </li>
+        <li>
+            <mat-slide-toggle>Task 4</mat-slide-toggle>
+        </li>
+        <li>
+            <mat-slide-toggle>Task 5</mat-slide-toggle>
+        </li>
+        <li>
+            <mat-slide-toggle>Task 6</mat-slide-toggle>
+        </li>
+        <li>
+            <mat-slide-toggle>Task 7</mat-slide-toggle>
+        </li>
+        <li>
+            <mat-slide-toggle>Task 8</mat-slide-toggle>
+        </li>
+        <li>
+            <mat-slide-toggle>Task 9</mat-slide-toggle>
+        </li>
+        <li>
+            <mat-slide-toggle>Task 10</mat-slide-toggle>
+        </li>
+    </ul>
+
+    <ng-template pTemplate="footer">
+        <p-button label="Archivar" icon="pi pi-check"></p-button>
+        <p-button label="Eliminar" icon="pi pi-times" styleClass="p-button-secondary" [style]="{'margin-left': '.5em'}">
+        </p-button>
+    </ng-template>
+</p-card>
+
+<a href="/todo-item" class="float top-padded">
+    <fa-icon [icon]="faPlus"></fa-icon>
+</a>
