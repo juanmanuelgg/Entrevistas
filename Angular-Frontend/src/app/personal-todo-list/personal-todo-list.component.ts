@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { MenuItem } from 'primeng/api';
+
+import { faPlus } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-personal-todo-list',
@@ -6,10 +9,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./personal-todo-list.component.scss']
 })
 export class PersonalTodoListComponent implements OnInit {
+  public lol: string = "Todo-List title";
+  public lol2: string = "Resumen";
 
-  constructor() { }
+  public items: MenuItem[] = [];
+  public faPlus = faPlus;
 
-  ngOnInit(): void {
+  ngOnInit() {
+    this.items = [
+      { label: 'Categoria', url: '/' },
+      { label: 'Todo-List title', url: 'todo-list' },
+    ];
   }
-
 }

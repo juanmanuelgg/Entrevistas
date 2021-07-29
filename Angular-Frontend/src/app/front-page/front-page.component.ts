@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { faFolder, faLaptop, faLaptopCode } from '@fortawesome/free-solid-svg-icons';
+import { PhotoService } from '../services/photo.service';
+import { Photo } from '../services/photo';
 
 @Component({
   selector: 'app-front-page',
@@ -15,8 +17,26 @@ export class FrontPageComponent implements OnInit {
   public faLaptopCode = faLaptopCode;
   public faFolder = faFolder;
 
-  constructor() { }
+  public images: Photo[] = [];
 
-  ngOnInit(): void { }
+  constructor(private photoService: PhotoService) { }
 
+  responsiveOptions: any[] = [
+    {
+      breakpoint: '1024px',
+      numVisible: 5
+    },
+    {
+      breakpoint: '768px',
+      numVisible: 3
+    },
+    {
+      breakpoint: '560px',
+      numVisible: 1
+    }
+  ];
+
+  ngOnInit() {
+    this.photoService.getImages().then(images => this.images = images);
+  }
 }

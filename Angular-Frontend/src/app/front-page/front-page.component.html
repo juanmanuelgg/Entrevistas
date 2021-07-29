@@ -4,33 +4,29 @@
 </div>
 
 <!-- Requerimiento -->
-<div class="w3-container" id="requirement" style="margin-top:75px">
+<div class="w3-container" id="practic-test" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-blue"><b>Prueba Práctica</b></h1>
     <a href="https://github.com/juanmanuelgg/Entrevista-OCTANS">
-        <h1 class="w3-xxxlarge w3-text-red"><b>Requerimiento</b></h1>
-        <hr style="width:50px;border:5px solid red" class="w3-round">
+        <h2><b>OCTANS Digital Services</b></h2>
     </a>
+    <hr style="width:50px;border:5px solid #2196F3" class="w3-round">
 </div>
 
-<!-- Photo grid -->
+<!-- Photo galleria -->
 <div class="w3-row-padding" id="showcase">
-    <h1 class="w3-xxxlarge w3-text-red"><b>Showcase.</b></h1>
-    <hr style="width:50px;border:5px solid red" class="w3-round">
-    <div class="w3-half">
-        <img src="/assets/images/Login.png" style="width:100%" alt="">
-        <img src="/assets/images/livingroom.jpg" style="width:100%" alt="n">
-        <img src="/assets/images/diningroom.jpg" style="width:100%" alt="">
-    </div>
-    <div class="w3-half">
-        <img src="/assets/images/atrium.jpg" style="width:100%" alt="">
-        <img src="/assets/images/bedroom.jpg" style="width:100%" alt="">
-        <img src="/assets/images/livingroom2.jpg" style="width:100%" alt="">
-    </div>
+    <h1 class="w3-xxxlarge w3-text-blue"><b>Showcase.</b></h1>
+    <hr style="width:50px;border:5px solid #2196F3" class="w3-round">
+    <p-galleria [value]="images">
+        <ng-template pTemplate="item" let-item>
+            <img [src]="item.previewImageSrc" [alt]="item.alt" style="width: 100%" />
+        </ng-template>
+    </p-galleria>
 </div>
 
 <!-- Engineer -->
 <div class="w3-container" id="engineer" style="margin-top:75px">
-    <h1 class="w3-xxxlarge w3-text-red"><b>Ingeniero</b></h1>
-    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <h1 class="w3-xxxlarge w3-text-blue"><b>Ingeniero</b></h1>
+    <hr style="width:50px;border:5px solid #2196F3" class="w3-round">
 </div>
 
 <div class="w3-row-padding w3-grayscale">
@@ -60,8 +56,8 @@
 
 <!-- Packages / Pricing Tables -->
 <!--<div class="w3-container" id="packages" style="margin-top:75px">
-    <h1 class="w3-xxxlarge w3-text-red"><b>Packages.</b></h1>
-    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <h1 class="w3-xxxlarge w3-text-blue"><b>Packages.</b></h1>
+    <hr style="width:50px;border:5px solid #2196F3" class="w3-round">
     <p>Some text our prices. Lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
         dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
         ea commodo consequat. Duis aute irure</p>
@@ -107,8 +103,8 @@
 
 <!-- Contact -->
 <!--<div class="w3-container" id="contact" style="margin-top:75px">
-    <h1 class="w3-xxxlarge w3-text-red"><b>Contact.</b></h1>
-    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <h1 class="w3-xxxlarge w3-text-blue"><b>Contact.</b></h1>
+    <hr style="width:50px;border:5px solid #2196F3" class="w3-round">
     <p>Do you want us to style your home? Fill out the form and fill me in with the details :) We love meeting new
         people!</p>
     <form action="/action_page.php" target="_blank">
