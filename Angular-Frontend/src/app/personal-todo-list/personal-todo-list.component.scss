@@ -5,10 +5,40 @@
     bottom: 40px;
     right: 40px;
     background-color: #69f0ae;
-    color: #FFF;
+    color: #fff;
     border-radius: 50px;
     text-align: center;
     box-shadow: 2px 2px 3px #999;
+}
+
+.todo-card {
+    padding-top: 10px;
+    
+    place-items: top;
+    
+}
+
+.reduced-card {
+    min-width: calc(100vh/2.5);
+    max-width: calc(100vh/2.5);
+    overflow: auto;
+    overflow-y: auto;
+    display: grid;
+    word-wrap: break-word;
+    border: 1px solid;
+    padding: 10px;
+    box-shadow: 5px 5px #888888;
+}
+.expanded-card {
+    width: 100%;
+    overflow: auto;
+}
+.edit-list {
+    background-color: hsl(60, 17%, 92%);
+}
+
+.new-task {
+    background-color: #69f0ae;
 }
 
 .my-float {
@@ -19,4 +49,8 @@
     display: grid;
     place-items: center;
     margin-top: 10px;
+}
+
+.lyt-center {
+    text-align: center;
 }

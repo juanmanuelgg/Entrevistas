@@ -2,13 +2,6 @@ mat-grid-tile{
     padding-bottom: 10px;
 }
 
-.todo-card {
-    padding-top: 10px;
-    display: grid;
-    place-items: top;
-    word-wrap: break-word;
-}
-
 .float {
     position: fixed;
     width: 60px;
@@ -22,29 +15,8 @@ mat-grid-tile{
     box-shadow: 2px 2px 3px #999;
 }
 
-.edit-list {
-    background-color: hsl(60, 17%, 92%);
-}
-
-.new-task {
-    background-color: #69f0ae;
-}
-
-.my-float {
-    margin-top: 222px;
-}
-
 .top-padded {
     display: grid;
     place-items: center;
     margin-top: 10px;
-}
-
-.lyt-center {
-    text-align: center;
-}
-
-.card-jmgg{
-    min-height: 480px;
-    
 }

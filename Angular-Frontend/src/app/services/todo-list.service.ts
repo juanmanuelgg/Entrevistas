@@ -9,10 +9,15 @@ export class TodoListService {
 
   constructor(private http: HttpClient) { }
 
-  getTodoList() {
+  getTodoLists() {
     return this.http.get<any>('assets/showcase/data/todo-lists.json')
       .toPromise()
-      .then(res => <TodoList[]>res.data)
-      .then(data => { return data; });
+      .then(res => <TodoList[]>res.data);
+  }
+
+  getTodoList(id: number) {
+    return this.http.get<any>(`assets/showcase/data/list${id}.json`)
+      .toPromise()
+      .then(res => <TodoList>res );
   }
 }

@@ -2,46 +2,7 @@
 
 <mat-grid-list cols="3" rowHeight="1:1">
     <mat-grid-tile *ngFor="let list of lists">
-        <p-card class="todo-card card-jmgg" header="{{list.title}} ({{list.tasks.length}})" subheader="{{list.sumary}}" [style]="{width: '360px'}"
-            styleClass="p-card-shadow">
-            <a href="/todo-list" class="edit-list top-padded">
-                <fa-icon [icon]="faEdit"></fa-icon>
-            </a>
-            <ul>
-                <span *ngFor="let task of list.tasks;  index as i;">
-                    <li *ngIf="i < limit">
-                        <mat-slide-toggle [checked]="task.completed">{{task.task}}</mat-slide-toggle>
-                    </li>
-                </span>
-                <br>
-                <a href="/todo-list">
-                    <span *ngIf="list.tasks.length <= limit">
-                        <fa-icon [icon]="faBatteryFull" size="lg"></fa-icon>
-                    </span>
-                    <span *ngIf="list.tasks.length > limit">
-                        <fa-icon [icon]="faBatteryHalf" size="lg"></fa-icon>
-                    </span>
-                    <span> ... Ver detalle</span>
-                </a>
-            </ul>
-            <a href="/todo-item" class="new-task top-padded">
-                <fa-icon [icon]="faPlus"></fa-icon>
-            </a>
-            <ng-template pTemplate="footer">
-                <div class="lyt-center">
-                    <p-button label="Archivar" (click)="archiveSwal.fire()" icon="pi pi-check"></p-button>
-                    <swal #archiveSwal title="¿Archivar Todo-List?" text="Tu lista ira al achivo" icon="question"
-                        [showCancelButton]="true" [focusCancel]="true" (confirm)="archiveTodoList()">
-                    </swal>
-
-                    <p-button label="Eliminar" (click)="deleteSwal.fire()" icon="pi pi-times"
-                        styleClass="p-button-secondary" [style]="{'margin-left': '.5em'}"></p-button>
-                    <swal #deleteSwal title="¿Eliminar Todo-List?" text="Esta acción no se puede deshacer"
-                        icon="question" [showCancelButton]="true" [focusCancel]="true" (confirm)="deleteTodoList()">
-                    </swal>
-                </div>
-            </ng-template>
-        </p-card>
+        <app-personal-todo-list [listParameter]="list"></app-personal-todo-list>
     </mat-grid-tile>
 </mat-grid-list>
 
