@@ -9,3 +9,6 @@ Mostrar el desarrollo de la prueba práctica de OCTANS
     Crear la interfaz de usuario utilizando:  De acuerdo si es front Angular y Back Java Mysql o Postgress 
     Crear en una base de datos las tablas solicitadas y procedimientos almacenados si lo considera necesario.
     Crear los servicios necesarios para el acceso a base de datos que soporten la funcionalidad requerida.
+
+## Entrega
+[V0.5.0](https://github.com/juanmanuelgg/Entrevista-OCTANS/releases/tag/V0.5.0)
