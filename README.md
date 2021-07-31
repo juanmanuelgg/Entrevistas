@@ -2,7 +2,7 @@
 Mostrar el desarrollo de las pruebas práctica de mi proceso de busqueda de empleo.
 ___
 
-## OCTANS || codesa
+## OCTANS Digital Services || codesa
 
 ### Oportunidad
 (2021-07-26  2021-07-29] sustentación en la tarde.
