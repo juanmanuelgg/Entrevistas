@@ -66,6 +66,17 @@ jobs:
     - run: |
        make bootstrap
        make release
+    - if: matrix.language == 'javascript'
+      name: Autobuild
+      uses: github/codeql-action/autobuild@v1
+
+    - if: matrix.language == 'java' 
+      name: Build Java
+      # run: |
+      #  make bootstrap
+      #  make release
+      run: |
+        echo 'JMGG TODO: learn to do this step'
 
     - name: Perform CodeQL Analysis
       uses: github/codeql-action/analyze@v1
