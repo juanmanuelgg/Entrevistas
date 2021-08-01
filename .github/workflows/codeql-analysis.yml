@@ -63,9 +63,6 @@ jobs:
     #    and modify them (or add more) to build your code if your project
     #    uses a compiled language
 
-    - run: |
-       make bootstrap
-       make release
     - if: matrix.language == 'javascript'
       name: Autobuild
       uses: github/codeql-action/autobuild@v1
