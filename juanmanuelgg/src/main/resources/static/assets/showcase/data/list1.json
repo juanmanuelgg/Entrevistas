@@ -1,0 +1,44 @@
+{
+    "id": 1,
+    "title": "Web App",
+    "sumary": "Lista de tareas para crear una Web App",
+    "tasks": [
+        {
+            "id": 1,
+            "task": "Crear un TODO-List-Item CRUD",
+            "completed": true
+        },
+        {
+            "id": 2,
+            "task": "Crear un esquema para los Todo-List-Item en la base de datos",
+            "completed": true
+        },
+        {
+            "id": 3,
+            "task": "Crear un API-REST-Spring-boot",
+            "completed": true
+        },
+        {
+            "id": 4,
+            "task": "Ir creando y completando la historia en github",
+            "completed": true
+        },
+        {
+            "id": 5,
+            "task": "Iniciar un espacio en Heroku",
+            "completed": true
+        },
+        {
+            "id": 6,
+            "task": "Crear los diferenetes entornos (desarrollo / producción) en local y en Heroku",
+            "completed": true
+        },
+        {
+            "id": 7,
+            "task": "Conectar la base de datos en los diferentes ambientes (devl/prod)",
+            "completed": true
+        }
+    ],
+    "deleted": false,
+    "archived": false
+}

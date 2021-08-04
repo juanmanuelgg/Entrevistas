@@ -1,0 +1,24 @@
+{
+    "id": 5,
+    "title": "Todo-List small",
+    "sumary": "Small Todo list",
+    "tasks": [
+        {
+            "id": 28,
+            "task": "Task 1",
+            "completed": true
+        },
+        {
+            "id": 29,
+            "task": "Task 2",
+            "completed": false
+        },
+        {
+            "id": 30,
+            "task": "Task 3",
+            "completed": true
+        }
+    ],
+    "deleted": false,
+    "archived": false
+}

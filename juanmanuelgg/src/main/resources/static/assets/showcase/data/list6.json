@@ -1,0 +1,44 @@
+{
+    "id": 6,
+    "title": "Todo-List medium",
+    "sumary": "Medium Todo list",
+    "tasks": [
+        {
+            "id": 31,
+            "task": "Task 1",
+            "completed": true
+        },
+        {
+            "id": 32,
+            "task": "Task 2",
+            "completed": true
+        },
+        {
+            "id": 33,
+            "task": "Task 3",
+            "completed": false
+        },
+        {
+            "id": 34,
+            "task": "Task 4",
+            "completed": false
+        },
+        {
+            "id": 35,
+            "task": "Task 5",
+            "completed": false
+        },
+        {
+            "id": 36,
+            "task": "Task 6",
+            "completed": true
+        },
+        {
+            "id": 37,
+            "task": "Task 7",
+            "completed": true
+        }
+    ],
+    "deleted": false,
+    "archived": false
+}

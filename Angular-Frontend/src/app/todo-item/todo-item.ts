@@ -15,6 +15,7 @@
  */
 export interface TODO_ITEM {
 	id: number,
+	fk_todo_list: number,
 	task: string,
 	completed: boolean
 }

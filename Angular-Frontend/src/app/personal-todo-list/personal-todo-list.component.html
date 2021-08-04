@@ -17,7 +17,7 @@
 -->
 <p-card [ngClass]="inGallery ? 'reduced-card': 'expanded-card'" header="{{list.title}} ({{list.tasks.length || 0}})"
     subheader="{{list.sumary}}" styleClass="p-card-shadow">
-    <a href="/todo-list" class="edit-list top-padded">
+    <a *ngIf="inGallery" [routerLink]="['/todo-list']" [queryParams]="{id: list.id}" routerLinkActive="active" class="edit-list top-padded">
         <fa-icon [icon]="faEdit"></fa-icon>
     </a>
     <ul>

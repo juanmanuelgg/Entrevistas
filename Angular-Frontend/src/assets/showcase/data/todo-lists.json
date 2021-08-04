@@ -1,123 +1,121 @@
-{
-    "data": [
-        {
-            "id": 1,
-            "title": "Web App",
-            "sumary": "Lista de tareas para crear una Web App",
-            "tasks": [
-                {"id": 1, "task":"Crear un TODO-List en Angular", "completed": true},
-                {"id": 2, "task":"Crear un esquema para los Todo-List-Item en la base de datos", "completed": false},
-                {"id": 3, "task":"Crear un API-REST-Spring-boot", "completed": false},
-                {"id": 4, "task":"Ir creando y completando la historia en github", "completed": true},
-                {"id": 5, "task":"Iniciar un espacio en Heroku", "completed": true},
-                {"id": 6, "task":"Crear los diferenetes entornos (desarrollo / producción) en local y en Heroku", "completed": false},
-                {"id": 7, "task":"Conectar la base de datos en los diferentes ambientes (devl/prod)", "completed": false}
-            ],
-            "deleted": false,
-            "archived": false
-        },
-        {
-            "id": 2,
-            "title": "Chequeo diario",
-            "sumary": "Lista de chequeo que repito siempre",
-            "tasks": [
-                {"id": 8, "task":"Correo, Noticias y preplaneación", "completed": false},
-                {"id": 9, "task":"Reunion de planeacion", "completed": true},
-                {"id": 10, "task":"Ejercicio Gato", "completed": true},
-                {"id": 11, "task":"Regar plantas", "completed": false},
-                {"id": 12, "task":"Lavar loza", "completed": true},
-                {"id": 13, "task":"Sacar basura", "completed": true},
-                {"id": 14, "task":"Organizar/Lavar ropa", "completed": false},
-                {"id": 15, "task":"Mercado", "completed": false},
-                {"id": 16, "task":"Pago de facturas", "completed": false},
-                {"id": 17, "task":"Avance cursos online", "completed": false}
-            ],
-            "deleted": false,
-            "archived": false
-        },
-        {
-            "id": 3,
-            "title": "Titulo",
-            "sumary": "Resumen",
-            "tasks": [
-                {"id": 18, "task":"Tarea 1", "completed": true},
-                {"id": 19, "task":"Tarea 2", "completed": false},
-                {"id": 20, "task":"Tarea 3", "completed": true},
-                {"id": 21, "task":"Tarea 4", "completed": false},
-                {"id": 21, "task":"Tarea 5", "completed": true},
-                {"id": 23, "task":"Tarea 6", "completed": false},
-                {"id": 24, "task":"Tarea 7", "completed": true},
-                {"id": 25, "task":"Tarea 8", "completed": false},
-                {"id": 26, "task":"Tarea 9", "completed": true},
-                {"id": 27, "task":"Tarea 10", "completed": false}
-            ],
-            "deleted": false,
-            "archived": false
-        },
-        {
-            "id": 4,
-            "title": "",
-            "sumary": "",
-            "tasks": [],
-            "deleted": false,
-            "archived": false
-        },
-        {
-            "id": 5,
-            "title": "Todo-List small",
-            "sumary": "Small Todo list",
-            "tasks": [
-                {"id": 28, "task":"Task 1", "completed": true},
-                {"id": 29, "task":"Task 2", "completed": false},
-                {"id": 30, "task":"Task 3", "completed": true}
-            ],
-            "deleted": false,
-            "archived": false
-        },
-        {
-            "id": 6,
-            "title": "Todo-List medium",
-            "sumary": "Medium Todo list",
-            "tasks": [
-                {"id": 31, "task":"Task 1", "completed": true},
-                {"id": 32, "task":"Task 2", "completed": true},
-                {"id": 33, "task":"Task 3", "completed": false},
-                {"id": 34, "task":"Task 4", "completed": false},
-                {"id": 35, "task":"Task 5", "completed": false},
-                {"id": 36, "task":"Task 6", "completed": true},
-                {"id": 37, "task":"Task 7", "completed": true}
-            ],
-            "deleted": false,
-            "archived": false
-        },
-        {
-            "id": 7,
-            "title": "Todo-List Big",
-            "sumary": "Big Todo list",
-            "tasks": [
-                {"id": 38, "task":"Task 1", "completed": true},
-                {"id": 39, "task":"Task 2", "completed": true},
-                {"id": 40, "task":"Task 3", "completed": true},
-                {"id": 41, "task":"Task 4", "completed": false},
-                {"id": 42, "task":"Task 5", "completed": false},
-                {"id": 43, "task":"Task 6", "completed": false},
-                {"id": 44, "task":"Task 7", "completed": false},
-                {"id": 45, "task":"Task 8", "completed": false},
-                {"id": 46, "task":"Task 9", "completed": false},
-                {"id": 47, "task":"Task 10", "completed": false},
-                {"id": 48, "task":"Task 11", "completed": false},
-                {"id": 49, "task":"Task 12", "completed": false},
-                {"id": 50, "task":"Task 13", "completed": false},
-                {"id": 51, "task":"Task 14", "completed": false},
-                {"id": 52, "task":"Task 15", "completed": false},
-                {"id": 53, "task":"Task 16", "completed": false},
-                {"id": 54, "task":"Task 17", "completed": false},
-                {"id": 55, "task":"Task 18", "completed": true},
-                {"id": 56, "task":"Task 19", "completed": true},
-                {"id": 57, "task":"Task 20", "completed": true}
-            ],
-            "deleted": false,
-            "archived": false
-        }
-    ]
-}
+[
+    {
+        "id": 1,
+        "title": "Web App",
+        "sumary": "Lista de tareas para crear una Web App",
+        "tasks": [
+            {"id": 1, "fk_todo_list": 1, "task":"Crear un TODO-List en Angular", "completed": true},
+            {"id": 2, "fk_todo_list": 1, "task":"Crear un esquema para los Todo-List-Item en la base de datos", "completed": false},
+            {"id": 3, "fk_todo_list": 1, "task":"Crear un API-REST-Spring-boot", "completed": false},
+            {"id": 4, "fk_todo_list": 1, "task":"Ir creando y completando la historia en github", "completed": true},
+            {"id": 5, "fk_todo_list": 1, "task":"Iniciar un espacio en Heroku", "completed": true},
+            {"id": 6, "fk_todo_list": 1, "task":"Crear los diferenetes entornos (desarrollo / producción) en local y en Heroku", "completed": false},
+            {"id": 7, "fk_todo_list": 1, "task":"Conectar la base de datos en los diferentes ambientes (devl/prod)", "completed": false}
+        ],
+        "deleted": false,
+        "archived": false
+    },
+    {
+        "id": 2,
+        "title": "Chequeo diario",
+        "sumary": "Lista de chequeo que repito siempre",
+        "tasks": [
+            {"id": 8, "fk_todo_list": 2, "task":"Correo, Noticias y preplaneación", "completed": false},
+            {"id": 9, "fk_todo_list": 2, "task":"Reunion de planeacion", "completed": true},
+            {"id": 10, "fk_todo_list": 2, "task":"Ejercicio Gato", "completed": true},
+            {"id": 11, "fk_todo_list": 2, "task":"Regar plantas", "completed": false},
+            {"id": 12, "fk_todo_list": 2, "task":"Lavar loza", "completed": true},
+            {"id": 13, "fk_todo_list": 2, "task":"Sacar basura", "completed": true},
+            {"id": 14, "fk_todo_list": 2, "task":"Organizar/Lavar ropa", "completed": false},
+            {"id": 15, "fk_todo_list": 2, "task":"Mercado", "completed": false},
+            {"id": 16, "fk_todo_list": 2, "task":"Pago de facturas", "completed": false},
+            {"id": 17, "fk_todo_list": 2, "task":"Avance cursos online", "completed": false}
+        ],
+        "deleted": false,
+        "archived": false
+    },
+    {
+        "id": 3,
+        "title": "Titulo",
+        "sumary": "Resumen",
+        "tasks": [
+            {"id": 18, "fk_todo_list": 3, "task":"Tarea 1", "completed": true},
+            {"id": 19, "fk_todo_list": 3, "task":"Tarea 2", "completed": false},
+            {"id": 20, "fk_todo_list": 3, "task":"Tarea 3", "completed": true},
+            {"id": 21, "fk_todo_list": 3, "task":"Tarea 4", "completed": false},
+            {"id": 21, "fk_todo_list": 3, "task":"Tarea 5", "completed": true},
+            {"id": 23, "fk_todo_list": 3, "task":"Tarea 6", "completed": false},
+            {"id": 24, "fk_todo_list": 3, "task":"Tarea 7", "completed": true},
+            {"id": 25, "fk_todo_list": 3, "task":"Tarea 8", "completed": false},
+            {"id": 26, "fk_todo_list": 3, "task":"Tarea 9", "completed": true},
+            {"id": 27, "fk_todo_list": 3, "task":"Tarea 10", "completed": false}
+        ],
+        "deleted": false,
+        "archived": false
+    },
+    {
+        "id": 4,
+        "title": "",
+        "sumary": "",
+        "tasks": [],
+        "deleted": false,
+        "archived": false
+    },
+    {
+        "id": 5,
+        "title": "Todo-List small",
+        "sumary": "Small Todo list",
+        "tasks": [
+            {"id": 28, "fk_todo_list": 5, "task":"Task 1", "completed": true},
+            {"id": 29, "fk_todo_list": 5, "task":"Task 2", "completed": false},
+            {"id": 30, "fk_todo_list": 5, "task":"Task 3", "completed": true}
+        ],
+        "deleted": false,
+        "archived": false
+    },
+    {
+        "id": 6,
+        "title": "Todo-List medium",
+        "sumary": "Medium Todo list",
+        "tasks": [
+            {"id": 31, "fk_todo_list": 6, "task":"Task 1", "completed": true},
+            {"id": 32, "fk_todo_list": 6, "task":"Task 2", "completed": true},
+            {"id": 33, "fk_todo_list": 6, "task":"Task 3", "completed": false},
+            {"id": 34, "fk_todo_list": 6, "task":"Task 4", "completed": false},
+            {"id": 35, "fk_todo_list": 6, "task":"Task 5", "completed": false},
+            {"id": 36, "fk_todo_list": 6, "task":"Task 6", "completed": true},
+            {"id": 37, "fk_todo_list": 6, "task":"Task 7", "completed": true}
+        ],
+        "deleted": false,
+        "archived": false
+    },
+    {
+        "id": 7,
+        "title": "Todo-List Big",
+        "sumary": "Big Todo list",
+        "tasks": [
+            {"id": 38,  "fk_todo_list": 7, "task":"Task 1", "completed": true},
+            {"id": 39,  "fk_todo_list": 7, "task":"Task 2", "completed": true},
+            {"id": 40,  "fk_todo_list": 7, "task":"Task 3", "completed": true},
+            {"id": 41,  "fk_todo_list": 7, "task":"Task 4", "completed": false},
+            {"id": 42,  "fk_todo_list": 7, "task":"Task 5", "completed": false},
+            {"id": 43,  "fk_todo_list": 7, "task":"Task 6", "completed": false},
+            {"id": 44,  "fk_todo_list": 7, "task":"Task 7", "completed": false},
+            {"id": 45,  "fk_todo_list": 7, "task":"Task 8", "completed": false},
+            {"id": 46,  "fk_todo_list": 7, "task":"Task 9", "completed": false},
+            {"id": 47,  "fk_todo_list": 7, "task":"Task 10", "completed": false},
+            {"id": 48,  "fk_todo_list": 7, "task":"Task 11", "completed": false},
+            {"id": 49,  "fk_todo_list": 7, "task":"Task 12", "completed": false},
+            {"id": 50,  "fk_todo_list": 7, "task":"Task 13", "completed": false},
+            {"id": 51,  "fk_todo_list": 7, "task":"Task 14", "completed": false},
+            {"id": 52,  "fk_todo_list": 7, "task":"Task 15", "completed": false},
+            {"id": 53,  "fk_todo_list": 7, "task":"Task 16", "completed": false},
+            {"id": 54,  "fk_todo_list": 7, "task":"Task 17", "completed": false},
+            {"id": 55,  "fk_todo_list": 7, "task":"Task 18", "completed": true},
+            {"id": 56,  "fk_todo_list": 7, "task":"Task 19", "completed": true},
+            {"id": 57,  "fk_todo_list": 7, "task":"Task 20", "completed": true}
+        ],
+        "deleted": false,
+        "archived": false
+    }
+]

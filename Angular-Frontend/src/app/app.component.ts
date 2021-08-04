@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 import { Component } from '@angular/core';
-import { faCode } from '@fortawesome/free-solid-svg-icons';
+import { faCode, faLaptopCode } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-root',
@@ -23,5 +23,16 @@ import { faCode } from '@fortawesome/free-solid-svg-icons';
 })
 export class AppComponent {
   public icon = faCode;
-  title='Angular-Frontend'
+  public repo = faLaptopCode;
+  title = 'Angular-Frontend'
+
+  w3_open(): void {
+    // document.getElementById("mySidebar").style.display = "block";
+    // document.getElementById("myOverlay").style.display = "block";
+  }
+
+  w3_close(): void {
+    // document.getElementById("mySidebar").style.display = "none";
+    // document.getElementById("myOverlay").style.display = "none";
+  }
 }

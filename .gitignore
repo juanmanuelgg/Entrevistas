@@ -23,4 +23,39 @@
 hs_err_pid*
 
 # The heroku deployment repository
-./juanmanuelgg/.git/
+/juanmanuelgg/.git*
+
+# =======================================================================================
+/juanmanuelgg/HELP.md
+/juanmanuelgg/target/
+/juanmanuelgg/!.mvn/wrapper/maven-wrapper.jar
+/juanmanuelgg/!**/src/main/**/target/
+/juanmanuelgg/!**/src/test/**/target/
+
+### STS ###
+/juanmanuelgg/.apt_generated
+/juanmanuelgg/.classpath
+/juanmanuelgg/.factorypath
+/juanmanuelgg/.project
+/juanmanuelgg/.settings
+/juanmanuelgg/.springBeans
+/juanmanuelgg/.sts4-cache
+
+### IntelliJ IDEA ###
+/juanmanuelgg/.idea
+/juanmanuelgg/*.iws
+/juanmanuelgg/*.iml
+/juanmanuelgg/*.ipr
+
+### NetBeans ###
+/juanmanuelgg/nbproject/private/
+/juanmanuelgg/nbbuild/
+/juanmanuelgg/dist/
+/juanmanuelgg/nbdist/
+/juanmanuelgg/.nb-gradle/
+/juanmanuelgg/build/
+/juanmanuelgg/!**/src/main/**/build/
+/juanmanuelgg/!**/src/test/**/build/
+
+### VS Code ###
+/juanmanuelgg/.vscode/

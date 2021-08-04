@@ -16,6 +16,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { TodoList } from './todo-list';
+import { environment } from '../../environments/environment'
 
 @Injectable({
   providedIn: 'root'
@@ -25,14 +26,14 @@ export class TodoListService {
   constructor(private http: HttpClient) { }
 
   getTodoLists() {
-    return this.http.get<any>('assets/showcase/data/todo-lists.json')
+    return this.http.get<any>(`${environment.api_server}/api/todo_list`)
       .toPromise()
-      .then(res => <TodoList[]>res.data);
+      .then(res => <TodoList[]>res);
   }
 
   getTodoList(id: number) {
-    return this.http.get<any>(`assets/showcase/data/list${id}.json`)
+    return this.http.get<any>(`${environment.api_server}/api/todo_list/${id}`)
       .toPromise()
-      .then(res => <TodoList>res );
+      .then(res => <TodoList>res);
   }
 }
