@@ -70,11 +70,13 @@ jobs:
       name: Perform CodeQL Analysis
       uses: github/codeql-action/analyze@v1
 
-    - if: matrix.language == 'java' 
-      name: Build Java
-      # run: |
-      #  make bootstrap
-      #  make release
-      run: |
-        echo 'JMGG TODO: Learn to build Java'
-        echo 'JMGG TODO: Learn to analyze Java'
+    - if: matrix.language == 'java'
+      name: Autobuild
+      uses: github/codeql-action/autobuild@v1
+      #name: Build Java
+      ## run: |
+      ##  make bootstrap
+      ##  make release
+      #run: |
+      #  echo 'JMGG TODO: Learn to build Java'
+      #  echo 'JMGG TODO: Learn to analyze Java'
