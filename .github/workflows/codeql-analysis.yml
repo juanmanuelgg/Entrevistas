@@ -61,20 +61,18 @@ jobs:
 
     # ✏️ If the Autobuild fails above, remove it and uncomment the following three lines
     #    and modify them (or add more) to build your code if your project
-    #    uses a compiled language
+    #    uses a compiled language ... JMGG: those 3 lines were an assumption, make bootstrap; make build ... in my proyect I dont have a makefile
 
     - if: matrix.language == 'javascript'
-      name: Autobuild
+      name: Autobuild javascript
       uses: github/codeql-action/autobuild@v1
     - if: matrix.language == 'javascript'
-      name: Perform CodeQL Analysis
+      name: Perform CodeQL Analysis on javascript code
       uses: github/codeql-action/analyze@v1
 
-    - if: matrix.language == 'java' 
-      name: Build Java
-      # run: |
-      #  make bootstrap
-      #  make release
-      run: |
-        echo 'JMGG TODO: Learn to build Java'
-        echo 'JMGG TODO: Learn to analyze Java'
+    - if: matrix.language == 'java'
+      name: Autobuild java
+      uses: github/codeql-action/autobuild@v1
+    - if: matrix.language == 'java'
+      name: Perform CodeQL Analysis on java code
+      uses: github/codeql-action/analyze@v1
