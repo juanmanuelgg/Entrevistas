@@ -59,3 +59,5 @@ hs_err_pid*
 
 ### VS Code ###
 /juanmanuelgg/.vscode/
+
+node_modules

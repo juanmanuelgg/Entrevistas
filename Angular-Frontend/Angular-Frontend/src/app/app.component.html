@@ -1,0 +1,66 @@
+<!--
+/*
+ * Copyright (C) 2021 Juan Manuel González Garzón
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+ -->
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-blue w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;"
+    id="mySidebar"><br>
+    <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft"
+        style="width:100%;font-size:22px">Close Menu</a>
+    <div class="w3-container" style="text-align: center;">
+        <a href="/" onclick="w3_close()"><fa-icon [icon]="icon" size="lg"></fa-icon></a>
+    </div>
+    <br>
+    <div class="w3-bar-block">
+        <a href="/home" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Home</a>
+        <a href="/home/#practic-test" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">- Prueba Práctica</a>
+        <a href="/home/#showcase" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">- Showcase</a>
+        <a href="/home/#engineer" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">- Ingeniero</a>
+        <!--<a href="/home/#packages" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Packages</a>-->
+        <!--<a href="/home/#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Contact</a>-->
+        <br>
+        <a href="/login" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Login</a>
+    </div>
+
+    <!-- W3.CSS Container -->
+    <div id="footer" class="w3-light-grey w3-container">
+        <div class="w3-container" style="text-align: center; padding-top: 30px;">
+            <a href="https://github.com/juanmanuelgg/Entrevistas" onclick="w3_close()"><fa-icon [icon]="repo" size="lg"></fa-icon><p><b>Codigó fuente</b></p></a>
+        </div>
+        <br>
+        <p class="w3-right">Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS"
+                target="_blank" class="w3-hover-opacity">w3.css</a></p>
+    </div>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-red w3-xlarge w3-padding">
+    <a href="javascript:void(0)" class="w3-button w3-red w3-margin-right" onclick="w3_open()">☰</a>
+    <span>OCTANS Digital Services</span>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu"
+    id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div id="body" class="w3-main" style="margin-left:340px;margin-right:40px">
+    <router-outlet></router-outlet>
+    <!-- End page content -->
+</div>

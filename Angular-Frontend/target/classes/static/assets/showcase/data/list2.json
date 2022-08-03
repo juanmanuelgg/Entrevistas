@@ -1,0 +1,59 @@
+{
+    "id": 2,
+    "title": "Chequeo diario",
+    "sumary": "Lista de chequeo que repito siempre",
+    "tasks": [
+        {
+            "id": 8,
+            "task": "Correo, Noticias y preplaneación",
+            "completed": false
+        },
+        {
+            "id": 9,
+            "task": "Reunion de planeacion",
+            "completed": true
+        },
+        {
+            "id": 10,
+            "task": "Ejercicio Gato",
+            "completed": true
+        },
+        {
+            "id": 11,
+            "task": "Regar plantas",
+            "completed": false
+        },
+        {
+            "id": 12,
+            "task": "Lavar loza",
+            "completed": true
+        },
+        {
+            "id": 13,
+            "task": "Sacar basura",
+            "completed": true
+        },
+        {
+            "id": 14,
+            "task": "Organizar/Lavar ropa",
+            "completed": false
+        },
+        {
+            "id": 15,
+            "task": "Mercado",
+            "completed": false
+        },
+        {
+            "id": 16,
+            "task": "Pago de facturas",
+            "completed": false
+        },
+        {
+            "id": 17,
+            "task": "Avance cursos online",
+            "completed": false
+        }
+    ],
+    "deleted": false,
+    "archived": false
+}
